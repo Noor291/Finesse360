@@ -7,11 +7,11 @@ Chart.register(DoughnutController, ArcElement, CategoryScale);
 
 export default function Charts() {
     const subjects = [
-        { name: 'Budgeting', marks: 85 },
-        { name: 'Saving', marks: 90 },
-        { name: 'Investing', marks: 78 },
-        { name: 'Debt Management', marks: 65 },
-        { name: 'Retirement Planning', marks: 65 },
+        { name: 'Budgeting', marks: 40 },
+        { name: 'Saving', marks: 70 },
+        { name: 'Investing', marks: 60 },
+        { name: 'Debt Management', marks: 0 },
+        { name: 'Retirement Planning', marks: 100 },
     ];
 
     const generateDoughnutData = (subject) => ({
