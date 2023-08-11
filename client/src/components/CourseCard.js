@@ -7,15 +7,15 @@ export default function CourseCard() {
       description: 'This level is for those who are new to the topic.',
       flashcards: [
         {
-          cardTitle: 'Course 1',
+          cardTitle: 'Introduction to Finance',
           completed: false,
         },
         {
-          cardTitle: 'Course 2',
+          cardTitle: 'The Corporate Finance',
           completed: false,
         },
         {
-          cardTitle: 'Course 3',
+          cardTitle: 'Financial Modeling ',
           completed: false,
         },
       ],
@@ -108,6 +108,7 @@ export default function CourseCard() {
                   <p className="text-gray-600 mb-4">{courses.find(course => course.title === selectedLevel).description}</p>
                   <div className="border border-gray-300 mb-2"></div>
                   <div className="flex justify-between space-x-4">
+                    
                     <button
                       onClick={() => handleGoToCourse(selectedLevel, flashcard.cardTitle)}
                       className="bg-[#536162] hover:bg-[#C06014] text-white px-4 py-2 rounded transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring focus:ring-offset-2 focus:ring-[#C06014]"
