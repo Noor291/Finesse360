@@ -9,8 +9,8 @@ export default function Landing() {
     <div>
       <Nav/>
       <Home/>
-      <Cards/>
       <Grid/>
+      <Cards/>
       <Footer/>
     </div>
   )

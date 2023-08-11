@@ -1,28 +1,30 @@
 import React from 'react'
 import Finance from "../assets/finance.jpg"
+import Budget from '../assets/Budget.jpg'
+import Retire from '../assets/Retire.jpg'
 
 export default function Services() {
     const cards = [
         {
-          title: 'Finance',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et ipsum at odio egestas luctus vel nec neque.  ',
-          imageUrl: Finance,
+          title: 'Budgeting',
+          description: 'Through careful budgeting, one gains the ability to make informed spending decisions, save for future needs, and respond effectively to changing financial circumstances. ',
+          imageUrl: Budget,
         },
         {
-            title: 'Finance',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et ipsum at odio egestas luctus vel nec neque. ',
+            title: 'Debt Management',
+            description: 'Effective debt management involves strategically structuring to minimize interest costs and regain financial freedom while maintaining a sustainable path towards achieving long-term financial goals.',
             imageUrl: Finance,
           },
           {
-            title: 'Finance',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et ipsum at odio egestas luctus vel nec neque.  ',
-            imageUrl: Finance,
+            title: 'Retirement Planning',
+            description: 'Retirement planning entails thoughtfully structuring financial strategies and investments to secure a comfortable post-working life, ensuring a reliable income source and a fulfilling retirement journey.',
+            imageUrl: Retire,
           },
       ];
   return (
     <>
     <section name="Articles" className="pt-[70px] py-10">
-        <h1 className="text-4xl font-bold text-[#424642] font-sans from-neutral-500 text-center">OUR SERVICES</h1>
+        <h1 className="text-4xl font-bold text-[#424642] font-sans from-neutral-500 text-center">Articles</h1>
         <div className="flex justify-center">
         </div>
         <div className="container mx-auto pl-20 pr-20 py-6">
@@ -33,11 +35,13 @@ export default function Services() {
             className="border-2 border-grey-100 relative rounded-lg overflow-hidden transition-transform duration-200 transform hover:-translate-y-3 hover:shadow-2xl hover:shadow-[#DFCDC3]"
           >
             <div className="h-48 ">
+              <a href='/articles'>
               <img
                 className="w-full h-full object-cover"
                 src={card.imageUrl}
                 alt={card.title}
               />
+              </a>
             </div>
             <div className="bg-[#F3F4ED] p-4">
               <h3 className="text-[#C06014] text-xl font-extrabold text-left">{card.title}</h3>

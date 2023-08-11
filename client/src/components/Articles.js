@@ -1,7 +1,10 @@
 import React from 'react';
-import Budget from '../assets/budget.jpg'
+import Budget from '../assets/Budget.jpg'
+import Nav from './Nav'
 export default function Articles() {
   return (
+    <>
+    <Nav/>
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <div className="flex flex-col justify-center items-center w-full py-8 px-36">
         <h1 className="text-3xl font-bold mb-4"> Mastering the Art of Budgeting: Your Path to Financial Success</h1>
@@ -65,5 +68,6 @@ export default function Articles() {
         </div>
       </div>
     </div>
+    </>
   );
 }
