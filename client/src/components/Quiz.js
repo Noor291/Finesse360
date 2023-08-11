@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState } from "react";
 import { quiz } from "../data/quiz.js";
+import _ from "lodash";
 import "../cssFiles/quiz.css";
 import { useNavigate } from "react-router-dom";
 const ScoreContext = createContext();
@@ -21,10 +22,11 @@ export default function Quiz() {
     scoreDebt: 0,
     scoreRetire: 0,
   });
-
+  
   const { questions } = quiz;
+  const shuffledQuestions = _.shuffle(questions);
   const { question, choices, correctAnswer, topic, points } =
-    questions[activeQuestion];
+  shuffledQuestions[activeQuestion];
 
   const onClickNext = () => {
     setSelectedAnswerIndex(null);

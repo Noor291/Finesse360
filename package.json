@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@material-tailwind/react": "^2.0.8",
+    "lodash": "^4.17.21",
     "papaparse": "^5.4.1",
     "react-scroll": "^1.8.9"
   }
